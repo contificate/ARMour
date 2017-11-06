@@ -20,9 +20,7 @@ class ARMEncoder : public UEncoder<uint32_t> {
 
   arm_cond cond() const;
 
-  u_type operator&(const arm_cond cond) {
-    return (value_ & static_cast<u_type>(cond));
-  }
+  bool operator&(const arm_cond cond) const;
 
 };
 
