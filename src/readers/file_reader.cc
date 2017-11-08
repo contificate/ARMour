@@ -29,6 +29,10 @@ void FileReader::Read(char *const dst, const size_t len) {
   ifs_.read(dst, len);
 }
 
+size_t FileReader::size() const {
+  return init_size_;
+}
+
 FileReader::operator bool() const {
   return ifs_.is_open();
 }

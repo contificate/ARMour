@@ -25,6 +25,10 @@ std::streampos MemoryReader::pos() const {
   return current_ptr_;
 }
 
+size_t MemoryReader::size() const {
+  return init_size_;
+}
+
 MemoryReader::operator bool() const {
   return (base_addr_ && (current_ptr_ >= 0));
 }

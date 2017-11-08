@@ -42,7 +42,6 @@ std::string arm_cond_to_str(const arm_cond cond);
 enum class arm_mask : uint32_t {
   /**
    * Branch and exchange
-   *
    */
       BX = 0b00000001001011111111111100010000,
   /**

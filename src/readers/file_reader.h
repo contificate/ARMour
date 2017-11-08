@@ -19,6 +19,8 @@ class FileReader : public StreamReader {
 
   void Read(char *const dst, const size_t len) override;
 
+  size_t size() const override;
+
   operator bool() const override;
 
  private:

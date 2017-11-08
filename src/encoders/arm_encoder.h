@@ -6,7 +6,7 @@
 
 namespace enc {
 
-using arm::arm_cond;
+using namespace arm;
 
 /**
  * Minimal ARM instruction encoding wrapper (specialisation of enc::UEncoder<> for uint32_t)
@@ -20,8 +20,10 @@ class ARMEncoder : public UEncoder<uint32_t> {
 
   arm_cond cond() const;
 
-  bool operator&(const arm_cond cond) const;
+  operator u_type() const;
 
+  bool operator&(const arm_cond cond) const;
+  bool operator&(const arm_mask instr_mask) const;
 };
 
 } // namespace enc

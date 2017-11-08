@@ -60,6 +60,12 @@ class StreamReader {
    */
   virtual operator bool() const pure;
 
+  /**
+   * Get the size of the stream
+   * @return size of the stream
+   */
+  virtual size_t size() const pure;
+
 };
 
 } // namespace rdr
