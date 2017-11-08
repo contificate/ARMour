@@ -32,5 +32,6 @@ class UEncoder {
   const uint8_t u_size_ = sizeof(UT);
 };
 
-}
+} // namespace enc
+
 #endif //ARMOUR_U_ENCODER_H
