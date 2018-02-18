@@ -14,6 +14,7 @@ As noted, only functions accepting up to 4 arguments are being focused on.
 I've not really theorised a good way of doing this so far. 
 Some papers I've read on the subject suggest forming IR representations for each gadget block and then (essentially) bruteforcing order permutations by doing static analysis post-chaining (ordering) to check if required argument registers are live.
 
+TODO: lots
 As for stack spilling and localised jump cycles (e.g. perhaps by forcing _cmp_ conditions to yield false), I'm not really concerned with those at the moment. It should be noted that being able to obsolete localised jumps is theoretically possible but would require much more rigorous static analysis. Being able to make use ROP gadgets that include localised jumps (by making the localised jumps redundant), could help defeat trivial defense mechanisms used to detect ROP chaining (such as CFI - Control Flow Integrity).
 
 My approach isn't really consolidated but this repo exists solely as a way for me to backup anything I might want to consider working on more later on.
