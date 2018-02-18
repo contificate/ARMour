@@ -1,6 +1,4 @@
 
-TODO: get back to this (nathfreder)
-
 # ARMour
 A small attempt at writing an automatic ROP chainer for ARM.
 

@@ -56,6 +56,20 @@ enum class arm_mask : uint32_t {
       LDM = 0b00001000000000000000000000000000
 };
 
+/**
+ * ARM GPRs and underlying encoding values (direct)
+ */
+enum class arm_gpr : uint8_t {
+  LR = 14
+};
+
+/**
+ * Get string representation of GPR
+ * @param gpr gpr number
+ * @return string representation of GPR
+ */
+std::string arm_gpr_to_str(const arm_gpr gpr);
+
 } // namespace arm
 
 #endif //ARMOUR_ARM_H

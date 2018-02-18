@@ -54,4 +54,15 @@ std::string arm_cond_to_str(const arm_cond cond) {
   }
 }
 
+std::string arm_gpr_to_str(const arm_gpr gpr)
+{
+  switch(gpr) {
+    case arm_gpr::LR:
+      return "lr";
+
+    default:
+      return "Unknown";
+  }
+}
+
 } // namespace arm
